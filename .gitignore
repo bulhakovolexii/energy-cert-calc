@@ -128,3 +128,10 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Obsidian workspace settings
+.obsidian/*
+
+# OS settings and caches
+.trash/
+.DS_Store
