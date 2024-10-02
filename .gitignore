@@ -135,3 +135,7 @@ dist
 # OS settings and caches
 .trash/
 .DS_Store
+
+# Python virtual environment
+/venv
+*__pycache__
