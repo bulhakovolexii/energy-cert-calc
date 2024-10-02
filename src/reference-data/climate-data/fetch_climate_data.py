@@ -4,32 +4,32 @@ import urllib.parse
 import time
 import json
 from dotenv import load_dotenv
-from calc_tilted_irradiance import calc_tilted_irradiance  # Импорт функции из второго скрипта
+from calc_tilted_irradiance import calc_tilted_irradiance
 
-# Загружаем переменные окружения из .env файла
+# Завантажуємо змінні оточенні з .env файлу
 load_dotenv()
 
-# Получаем путь к директории, где находится текущий скрипт
+# Отримуємо шлях до директорії, де знаходиться поточний скрипт
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 API_KEY = os.getenv('NSRDB_API_KEY')
 EMAIL = os.getenv('EMAIL')
 BASE_URL = "https://developer.nrel.gov/api/nsrdb/v2/solar/nsrdb-msg-v1-0-0-tmy-download.csv"
 
-# Загружаем данные о городах из JSON-файла
+# Завантажуємо дані про міста з JSON-файлу
 with open(os.path.join(script_dir, '../cities.json'), 'r', encoding='utf-8') as file:
     cities_data = json.load(file)
 
-# Фильтруем города с координатами
+# Фільтруємо міста з координатами
 cities = {city['city']: city['location'] for city in cities_data if city['location']}
 
-# Название поддиректории для сохранения данных
+# Назва піддиректорії для збереження результатів
 output_directory = os.path.join(script_dir, 'cities')
 
-# Создаем поддиректорию, если она не существует
+# Створюємо піддиректорію якщо ії не існує
 os.makedirs(output_directory, exist_ok=True)
 
-# Основная функция для выполнения запросов
+# Основна функція для виконання запитів
 def fetch_and_save_data():
     total_cities = len(cities)
     for index, (city, coordinates) in enumerate(cities.items(), start=1):
@@ -44,7 +44,7 @@ def fetch_and_save_data():
             'email': EMAIL
         }
 
-        # Кодирование параметров URL
+        # Кодування параметрів URL
         url = f"{BASE_URL}?{urllib.parse.urlencode(params)}"
         response = requests.get(url)
 
@@ -54,16 +54,16 @@ def fetch_and_save_data():
                 file.write(response.content)
             print(f"Data for {city} saved to {file_name}")
 
-            # Обработка загруженного файла
+            # Обробка завантаженого файлу
             calc_tilted_irradiance(file_name)
 
         else:
             print(f"Error fetching data for {city}: {response.status_code} - {response.text}")
 
-        # Вывод прогресса
+        # Вивід прогресу в консоль
         print(f"Processed {index} of {total_cities} cities...")
 
-        # Задержка между запросами
+        # Затримка між запитами
         time.sleep(1)
 
 if __name__ == "__main__":
