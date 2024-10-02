@@ -71,6 +71,13 @@ Year,Month,Day,Hour,Minute,Alpha,AOD,GHI,DNI,DHI
 - cmd.exe `venv\Scripts\activate.bat`
 - PowerShell `venv\Scripts\Activate.ps1`
 
+> Примітка У Microsoft Windows може знадобитися ввімкнути сценарій Activate.ps1,
+> встановивши політику виконання для користувача. Ви можете зробити це, виконавши таку
+> команду PowerShell:
+> ```PS C:\> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser```
+> Додаткову інформацію див. у розділі 
+[«Про політику виконання»](https://go.microsoft.com/fwlink/?LinkID=135170).
+
 Для MacOS/Linux: `source venv/bin/activate`
 
 3. Встановіть залежності `pip install pvlib python-dotenv`
