@@ -9,18 +9,22 @@ from calc_tilted_irradiance import calc_tilted_irradiance  # Импорт фун
 # Загружаем переменные окружения из .env файла
 load_dotenv()
 
+# Получаем путь к директории, где находится текущий скрипт
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
 API_KEY = os.getenv('NSRDB_API_KEY')
+EMAIL = os.getenv('EMAIL')
 BASE_URL = "https://developer.nrel.gov/api/nsrdb/v2/solar/nsrdb-msg-v1-0-0-tmy-download.csv"
 
 # Загружаем данные о городах из JSON-файла
-with open('../cities.json', 'r', encoding='utf-8') as file:
+with open(os.path.join(script_dir, '../cities.json'), 'r', encoding='utf-8') as file:
     cities_data = json.load(file)
 
 # Фильтруем города с координатами
 cities = {city['city']: city['location'] for city in cities_data if city['location']}
 
 # Название поддиректории для сохранения данных
-output_directory = 'cities'
+output_directory = os.path.join(script_dir, 'cities')
 
 # Создаем поддиректорию, если она не существует
 os.makedirs(output_directory, exist_ok=True)
@@ -37,7 +41,7 @@ def fetch_and_save_data():
             'utc': 'false',
             'leap_day': 'true',
             'interval': '60',
-            'email': 'olexii.bulhakov@khpi.edu.ua'
+            'email': EMAIL
         }
 
         # Кодирование параметров URL
