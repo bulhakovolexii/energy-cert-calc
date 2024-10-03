@@ -23,8 +23,8 @@ def calc_tilted_irradiance(csv_file):
     solar_position = get_solarposition(df.index, latitude, longitude)
 
     # Додавання даних положення сонця до таблиці
-    df['apparent_zenith'] = solar_position['apparent_zenith']
-    df['azimuth'] = solar_position['azimuth']
+    df['apparent_zenith'] = round(solar_position['apparent_zenith'], 2)
+    df['azimuth'] = round(solar_position['azimuth'], 2)
 
     # Визначення параметрів для напрямків (північ, північний схід тощо)
     orientations = {
@@ -55,7 +55,7 @@ def calc_tilted_irradiance(csv_file):
     # Додавання розрахунків для кожного напряму
     tilt = 90  # Вертикальні поверхні
     for direction, azimuth in orientations.items():
-        df[f'irradiance_{direction}'] = calculate_irradiance(df, tilt, azimuth)
+        df[f'irradiance_{direction}'] = round(calculate_irradiance(df, tilt, azimuth), 1)
 
     # Виведення результатів у CSV
     df.to_csv(csv_file, index=False)
