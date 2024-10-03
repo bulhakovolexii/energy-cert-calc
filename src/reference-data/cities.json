@@ -1,127 +1,127 @@
 [
-  {
-    "city": "Simferopol",
-    "cityUa": "Сімферополь",
-    "location": "POINT(34.09617206085146 44.952093348974444)"
-  },
-  {
-    "city": "Vinnytsia",
-    "cityUa": "Вінниця",
-    "location": "POINT(28.47237829239479 49.23332829385313)"
-  },
-  {
-    "city": "Lutsk",
-    "cityUa": "Луцьк",
-    "location": "POINT(25.332649727086515 50.75038043998566)"
-  },
-  {
-    "city": "Dnipro",
-    "cityUa": "Дніпро",
-    "location": "POINT(35.066622773192016 48.45861076741678)"
-  },
-  {
-    "city": "Donetsk",
-    "cityUa": "Донецьк",
-    "location": "POINT(37.92056435781062 48.01455118587067)"
-  },
-  {
-    "city": "Zhytomyr",
-    "cityUa": "Житомир",
-    "location": "POINT(28.663748742901408 50.26037323897)"
-  },
-  {
-    "city": "Uzhhorod",
-    "cityUa": "Ужгород",
-    "location": "POINT(22.283076454741153 48.622497988510304)"
-  },
-  {
-    "city": "Zaporizhzhia",
-    "cityUa": "Запоріжжя",
-    "location": "POINT(35.129991517249465 47.84084419667179)"
-  },
-  {
-    "city": "Ivano-Frankivsk",
-    "cityUa": "Івано-Франківськ",
-    "location": "POINT(24.722978010851218 48.9184795019416)"
-  },
-  {
-    "city": "Kropyvnytskyi",
-    "cityUa": "Кропивницький",
-    "location": "POINT(32.26199258144774 48.507747680129114)"
-  },
-  {
-    "city": "Kyiv",
-    "cityUa": "Київ",
-    "location": "POINT(30.50274215060105 50.44495774933109)"
-  },
-  {
-    "city": "Luhansk",
-    "cityUa": "Луганськ",
-    "location": "POINT(39.30269622375673 48.57217074539162)"
-  },
-  {
-    "city": "Lviv",
-    "cityUa": "Львів",
-    "location": "POINT(24.031821079111413 49.83903755253115)"
-  },
-  {
-    "city": "Mykolaiv",
-    "cityUa": "Миколаїв",
-    "location": "POINT(31.99435944672857 46.967546394934374)"
-  },
-  {
-    "city": "Odesa",
-    "cityUa": "Одеса",
-    "location": "POINT(30.73518165299449 46.471998722426804)"
-  },
-  {
-    "city": "Poltava",
-    "cityUa": "Полтава",
-    "location": "POINT(34.55378546202416 49.58997264215258)"
-  },
-  {
-    "city": "Rivne",
-    "cityUa": "Рівне",
-    "location": "POINT(26.250017931397068 50.618228951636915)"
-  },
-  {
-    "city": "Sumy",
-    "cityUa": "Суми",
-    "location": "POINT(34.79911690234924 50.90797905128114)"
-  },
-  {
-    "city": "Ternopil",
-    "cityUa": "Тернопіль",
-    "location": "POINT(25.5918359150893 49.550973125560496)"
-  },
-  {
-    "city": "Kharkiv",
-    "cityUa": "Харків",
-    "location": "POINT(36.300966904942186 50.0031646488611)"
-  },
-  {
-    "city": "Kherson",
-    "cityUa": "Херсон",
-    "location": "POINT(32.61977650167533 46.63630542245538)"
-  },
-  {
-    "city": "Khmelnytskyi",
-    "cityUa": "Хмельницький",
-    "location": "POINT(26.988065427440034 49.42189093052996)"
-  },
-  {
-    "city": "Cherkasy",
-    "cityUa": "Черкаси",
-    "location": "POINT(32.07225650031167 49.44065768210799)"
-  },
-  {
-    "city": "Chernivtsi",
-    "cityUa": "Чернівці",
-    "location": "POINT(25.920106897972122 48.29556076429884)"
-  },
-  {
-    "city": "Chernihiv",
-    "cityUa": "Чернігів",
-    "location": "POINT(31.290885951736257 51.49807328361999)"
-  }
+    {
+        "city": "Simferopol",
+        "cityUa": "Сімферополь",
+        "location": "POINT(34.09617206085146 44.952093348974444)"
+    },
+    {
+        "city": "Vinnytsia",
+        "cityUa": "Вінниця",
+        "location": "POINT(28.47237829239479 49.23332829385313)"
+    },
+    {
+        "city": "Lutsk",
+        "cityUa": "Луцьк",
+        "location": "POINT(25.332649727086515 50.75038043998566)"
+    },
+    {
+        "city": "Dnipro",
+        "cityUa": "Дніпро",
+        "location": "POINT(35.066622773192016 48.45861076741678)"
+    },
+    {
+        "city": "Donetsk",
+        "cityUa": "Донецьк",
+        "location": "POINT(37.92056435781062 48.01455118587067)"
+    },
+    {
+        "city": "Zhytomyr",
+        "cityUa": "Житомир",
+        "location": "POINT(28.663748742901408 50.26037323897)"
+    },
+    {
+        "city": "Uzhhorod",
+        "cityUa": "Ужгород",
+        "location": "POINT(22.283076454741153 48.622497988510304)"
+    },
+    {
+        "city": "Zaporizhzhia",
+        "cityUa": "Запоріжжя",
+        "location": "POINT(35.129991517249465 47.84084419667179)"
+    },
+    {
+        "city": "Ivano-Frankivsk",
+        "cityUa": "Івано-Франківськ",
+        "location": "POINT(24.722978010851218 48.9184795019416)"
+    },
+    {
+        "city": "Kropyvnytskyi",
+        "cityUa": "Кропивницький",
+        "location": "POINT(32.26199258144774 48.507747680129114)"
+    },
+    {
+        "city": "Kyiv",
+        "cityUa": "Київ",
+        "location": "POINT(30.50274215060105 50.44495774933109)"
+    },
+    {
+        "city": "Luhansk",
+        "cityUa": "Луганськ",
+        "location": "POINT(39.30269622375673 48.57217074539162)"
+    },
+    {
+        "city": "Lviv",
+        "cityUa": "Львів",
+        "location": "POINT(24.031821079111413 49.83903755253115)"
+    },
+    {
+        "city": "Mykolaiv",
+        "cityUa": "Миколаїв",
+        "location": "POINT(31.99435944672857 46.967546394934374)"
+    },
+    {
+        "city": "Odesa",
+        "cityUa": "Одеса",
+        "location": "POINT(30.73518165299449 46.471998722426804)"
+    },
+    {
+        "city": "Poltava",
+        "cityUa": "Полтава",
+        "location": "POINT(34.55378546202416 49.58997264215258)"
+    },
+    {
+        "city": "Rivne",
+        "cityUa": "Рівне",
+        "location": "POINT(26.250017931397068 50.618228951636915)"
+    },
+    {
+        "city": "Sumy",
+        "cityUa": "Суми",
+        "location": "POINT(34.79911690234924 50.90797905128114)"
+    },
+    {
+        "city": "Ternopil",
+        "cityUa": "Тернопіль",
+        "location": "POINT(25.5918359150893 49.550973125560496)"
+    },
+    {
+        "city": "Kharkiv",
+        "cityUa": "Харків",
+        "location": "POINT(36.300966904942186 50.0031646488611)"
+    },
+    {
+        "city": "Kherson",
+        "cityUa": "Херсон",
+        "location": "POINT(32.61977650167533 46.63630542245538)"
+    },
+    {
+        "city": "Khmelnytskyi",
+        "cityUa": "Хмельницький",
+        "location": "POINT(26.988065427440034 49.42189093052996)"
+    },
+    {
+        "city": "Cherkasy",
+        "cityUa": "Черкаси",
+        "location": "POINT(32.07225650031167 49.44065768210799)"
+    },
+    {
+        "city": "Chernivtsi",
+        "cityUa": "Чернівці",
+        "location": "POINT(25.920106897972122 48.29556076429884)"
+    },
+    {
+        "city": "Chernihiv",
+        "cityUa": "Чернігів",
+        "location": "POINT(31.290885951736257 51.49807328361999)"
+    }
 ]

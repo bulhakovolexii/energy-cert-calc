@@ -1,35 +1,38 @@
 {
-  "name": "energy-cert-calc",
-  "version": "0.0.1",
-  "description": "Node.js program for automatic processing of Excel files of applications to Ukrainian energy certificates of buildings, extraction of input data for the mathematical model of DSTU 9190:2022 and calculation of energy consumption.",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "test": "npm test",
-    "build": "tsc",
-    "start": "node dist/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bulhakovolexii/energy-cert-calc.git"
-  },
-  "keywords": [
-    "energy-consumption",
-    "building-energy-benchmarking",
-    "energy-efficiency",
-    "energy-modeling",
-    "building-performance"
-  ],
-  "author": "Olexii Bulhakov",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bulhakovolexii/energy-cert-calc/issues"
-  },
-  "homepage": "https://github.com/bulhakovolexii/energy-cert-calc#readme",
-  "devDependencies": {
-    "@types/node": "^22.7.2",
-    "typescript": "^5.6.2"
-  }
+    "name": "energy-cert-calc",
+    "version": "0.0.1",
+    "description": "Node.js program for automatic processing of Excel files of applications to Ukrainian energy certificates of buildings, extraction of input data for the mathematical model of DSTU 9190:2022 and calculation of energy consumption.",
+    "main": "index.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "test": "npm test",
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "format": "prettier --write .",
+        "check-format": "prettier --check ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bulhakovolexii/energy-cert-calc.git"
+    },
+    "keywords": [
+        "energy-consumption",
+        "building-energy-benchmarking",
+        "energy-efficiency",
+        "energy-modeling",
+        "building-performance"
+    ],
+    "author": "Olexii Bulhakov",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/bulhakovolexii/energy-cert-calc/issues"
+    },
+    "homepage": "https://github.com/bulhakovolexii/energy-cert-calc#readme",
+    "devDependencies": {
+        "@types/node": "^22.7.2",
+        "prettier": "^3.3.3",
+        "typescript": "^5.6.2"
+    }
 }
