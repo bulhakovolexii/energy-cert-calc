@@ -33,9 +33,11 @@ os.makedirs(output_directory, exist_ok=True)
 def fetch_and_save_data():
     total_cities = len(cities)
     for index, (city, coordinates) in enumerate(cities.items(), start=1):
+        wkt = f"POINT({coordinates['longitude']} {coordinates['latitude']})"
+
         params = {
             'api_key': API_KEY,
-            'wkt': coordinates,
+            'wkt': wkt,
             'attributes': 'ghi,dni,dhi',
             'names': 'tmy',
             'utc': 'false',
@@ -46,6 +48,8 @@ def fetch_and_save_data():
 
         # Кодування параметрів URL
         url = f"{BASE_URL}?{urllib.parse.urlencode(params)}"
+        print(params)
+        
         response = requests.get(url)
 
         if response.status_code == 200:
